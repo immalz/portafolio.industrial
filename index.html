@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO | NOMBRE</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body class="body">
+
+    <nav class="navbar">
+        <div class="logo"><h1>NOMBRE</h1></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+            <li><a class="active" href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educacion</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="snap-container main">
+        <div class="snap-section inicio" id="inicio">
+            <div class="inicio__texto">
+                <h1>NOMBRE <span>COMPLETO</span></h1>
+                <p>Licenciado en Ingenieria Industrial</p>
+                <a href="#" class="cv">Descargar CV</a>
+                <span class="fecha" id="fecha"></span>
+            </div>
+            <a href="#sobre-mi"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="snap-section historia" id="sobre-mi">
+            <div class="texto-img">
+                
+                <div class="historia__imagen">
+                    <img src="./images/perfil.jpg">
+                </div>
+                <div class="historia__texto">
+                    <h2>Mi nombre es <span>Marco Alzamora</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolore fugiat itaque magni eos nam possimus cumque dolor magnam, non facilis, voluptatum aliquam aspernatur dignissimos incidunt hic labore, asperiores excepturi fugit inventore neque deleniti veniam praesentium! Ratione saepe perspiciatisLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="snap-section experiencia" id="experiencia">
+            <h1>Experiencia</h1>
+        </div>
+        <div class="snap-section educacion" id="educacion">
+            <h1>educacion</h1>
+        </div>
+        <div class="snap-section habilidades" id="proyectos">
+            <h1>habilidades</h1>
+        </div>-->
+         <div class="snap-section contacto" id="contacto">
+            
+            <form action="#">
+                <h2>Contactame</h2>
+                <input type="text" required placeholder="Nombre">
+                <input type="text" required placeholder="Correo">
+                <input type="text" required placeholder="Asunto">
+                <textarea required placeholder="Escribe tu mensaje aqui..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div> 
+    </main>
+
+    <footer class="footer">
+        <span>Creado por <a href="#">CORPEX</a> | <span class="far fa-copyright"></span> 2020 Todos los derechos reservados.</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
