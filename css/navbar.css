@@ -1,156 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 :root {
-  --color-principal: #46a2a1;
+    --color-principal: #46a2a1;
+    --blanco: #f1f1f1;
+    --gris: #888;
+    --gris-oscuro: #555;
+    --negro: #1c2b2d;
 }
 
 nav {
-  user-select: none;
-  display: flex;
-  height: 80px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-  flex-wrap: wrap;
-  position: fixed;
-  z-index: 10;
-  transition: .5s ease;
+    user-select: none;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 10;
+    transition: .5s ease;
 }
 
 nav.sticky {
-  background: #fff;
-  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
 }
-nav.sticky ul li a{
-  color: #000;
+
+nav.sticky ul li a {
+    color: #000;
 }
-nav .logo  {
-  width: 60px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+nav .logo {
+    width: 60px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-nav .logo h1 {
-  
-  font-size: 20px;
-  color: #fff;
-  border-bottom: 0.5px solid white;
+
+nav .logo a {
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 0.5px solid white;
+    font-weight: 800;
 }
-nav.sticky h1 {
-  
-  font-size: 20px;
-  color: #000;
-  border-bottom: 0.5px solid #000;
+
+nav.sticky .logo a {
+    font-size: 20px;
+    color: var(--color-principal);
+    border-bottom: 0.5px solid var(--color-principal);
 }
 
 nav ul {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 nav ul li {
-  margin: 0 5px;
+    margin: 0 5px;
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 300;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  color: var(--color-principal);
+    color: var(--color-principal);
 }
 
 nav .menu-btn i {
-  color: #000;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-.icono-nav {
-  font-size: 30px;
-  margin: 0 10px;
-  color: black;
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
 }
 
 
 /*--------RESPONSIVE--------*/
 
 @media (max-width: 1000px) {
-  nav {
-      padding: 0 40px 0 50px;
-  }
-  html {
-      font-size: 13px;
-  }
+    nav {
+        padding: 0 40px 0 50px;
+    }
+    html {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 920px) {
-  .producto__lista--tarjeta .tarjeta__img img {
-      width: 280px;
-  }
-  .carrito {
-      display: none;
-  }
-  nav .menu-btn i {
-      display: block;
-      color: #fff;
-  }
-  nav.sticky .menu-btn i {
-      color: #000;
-  }
-  #click:checked~.menu-btn i:before {
-      content: "\f00d";
-  }
-  nav ul {
-      position: fixed;
-      top: 80px;
-      left: -100%;
-      background: #fff;
-      z-index: 1;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      display: block;
-      transition: all 0.3s ease;
-  }
-  #click:checked~ul {
-      left: 0;
-  }
-  nav ul li {
-      width: 100%;
-      margin: 40px 0;
-  }
-  nav ul li a {
-      width: 100%;
-      margin-left: -100%;
-      display: block;
-      font-size: 20px;
-      color: #6b6b6b;
-      font-weight: 300;
-      transition: 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked~ul li a {
-      margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover {
-      background: none;
-      color: var(--color-principal);
-  }
+    nav .menu-btn i {
+        display: block;
+        z-index: 999;
+        position: relative;
+        color: #fff;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    nav.sticky .menu-btn i {
+        color: #000;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+        color: #000;
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #fff;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+        color: #000;
+        font-weight: 300;
+    }
 }

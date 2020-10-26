@@ -10,48 +10,57 @@
 </head>
 
 <body class="body">
-
     <nav class="navbar">
-        <div class="logo"><h1>NOMBRE</h1></div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
-        <ul>
-            <li><a class="active" href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mi</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educacion</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+        <div class="logo">
+            <a href="#">ROBERTO</a>
+        </div>
+        <ul class="menu">
+            <li><a class="active" href="#inicio" class="menu-btn">Inicio</a></li>
+            <li><a href="#sobre-mi" class="menu-btn">Sobre mi</a></li>
+            <li><a href="#experiencia" class="menu-btn">Experiencia</a></li>
+            <li><a href="#educacion" class="menu-btn">Educacion</a></li>
+            <li><a href="#proyectos" class="menu-btn">Proyectos</a></li>
+            <li><a href="#contacto" class="menu-btn">Contacto</a></li>
         </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
-    <main class="snap-container main">
-        <div class="snap-section inicio" id="inicio">
+    <main class=" main">
+        <div class="inicio" id="inicio">
             <div class="inicio__texto">
-                <h1>NOMBRE <span>COMPLETO</span></h1>
+                <h1>ROBERTO<span> FLORES</span></h1>
                 <p>Licenciado en Ingenieria Industrial</p>
-                <a href="#" class="cv">Descargar CV</a>
+                <a href="./static/CV__Roberto Flores.pdf" download="CV__Roberto Flores" class="cv">Descargar CV</a>
                 <span class="fecha" id="fecha"></span>
             </div>
             <a href="#sobre-mi"><i class="fas fa-chevron-down"></i></a>
         </div>
-        <div class="snap-section historia" id="sobre-mi">
-            <div class="texto-img">
-                
-                <div class="historia__imagen">
-                    <img src="./images/perfil.jpg">
+
+        <section class=" historia" id="sobre-mi">
+            <div class="historia__titulo">
+                <h2>Mi Historia</h2>
+            </div>
+            <div class="historia__contenido">
+                <div class="imagen">
+                    <img src="images/perfil.jpg" alt="Roberto Flores">
                 </div>
-                <div class="historia__texto">
-                    <h2>Mi nombre es <span>Marco Alzamora</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolore fugiat itaque magni eos nam possimus cumque dolor magnam, non facilis, voluptatum aliquam aspernatur dignissimos incidunt hic labore, asperiores excepturi fugit inventore neque deleniti veniam praesentium! Ratione saepe perspiciatisLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
+                <div class="texto">
+                    <h2>Roberto Alejandro Flores Rangel</h2>
+                    <p>Ingeniero Industrial, con experiencia y desarrollo en control administración de flota vehicular y maquinaria pesada, manejo de personal, Seguridad, Salud Ocupacional, Medio Ambiente. Conocimiento de Normas ISO 9001, OHSAS 18001 e ISO
+                        14001, con habilidad para liderar equipos humanos, orientando las habilidades de las personas al trabajo en equipo, fijación de objetivos, capacidad de análisis, organización, proactivo, Responsable y puntual. Orientado a la mejora
+                        continua y al logro de objetivos. Desarrollo de equipos de alto rendimiento con Sistemas Integrados de Gestión, Dirección, Gestión y evaluación de proyectos. Supervisión de personal, control de Inventarios y Almacenes, Manejo de
+                        indicadores y Control de Producción. Conocimiento y aplicaciones de indicadores como productividad, disponibilidad, ocupabilidad eficiencia y eficacia. Manejos de Microsoft office a nivel intermedio.</p>
+                    <a class="curriculum" href="./static/CV__Roberto Flores.pdf" download="CV__Roberto Flores"><button>Descargar CV</button></a>
+                    <div class="sociales">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- <div class="snap-section experiencia" id="experiencia">
             <h1>Experiencia</h1>
         </div>
@@ -61,25 +70,85 @@
         <div class="snap-section habilidades" id="proyectos">
             <h1>habilidades</h1>
         </div>-->
-         <div class="snap-section contacto" id="contacto">
-            
-            <form action="#">
-                <h2>Contactame</h2>
-                <input type="text" required placeholder="Nombre">
-                <input type="text" required placeholder="Correo">
-                <input type="text" required placeholder="Asunto">
-                <textarea required placeholder="Escribe tu mensaje aqui..."></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div> 
-    </main>
+        <section class="contact" id="contacto">
+            <h2 class="title">Contactame</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">
+                        Trabajemos juntos</div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">
+                                    Nombre</div>
+                                <div class="sub-title">
+                                    Roberto Flores Rangel</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">
+                                    Dirección</div>
+                                <div class="sub-title">
+                                    Puente Piedra - Lima - Perú</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">
+                                    Correo</div>
+                                <div class="sub-title">
+                                    janofloresr@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <div class="head">
+                                    Celular</div>
+                                <div class="sub-title">
+                                    +51 976237077</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">
+                        Enviame un mensaje</div>
+                    <form action="#">
+                        <div class="field name">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Correo electronico" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Asunto" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Escribe tu mensaje aqui..." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <span>Creado por <a href="#">CORPEX</a> | <span class="far fa-copyright"></span> 2020 Todos los derechos reservados.</span>
-    </footer>
+        <footer class="footer">
+            <span>Creado por <a href="#">CORPEX</a> | <span class="far fa-copyright"></span> 2020 Todos los derechos reservados.
+            </span>
+        </footer>
 
-    <script src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

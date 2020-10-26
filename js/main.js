@@ -15,3 +15,26 @@ const fechaPortafolio = () => {
     fecha.innerText = diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear();
 }
 fechaPortafolio();
+
+let ul = document.querySelector('ul');
+let li = document.querySelectorAll('li a');
+
+li.forEach(el => {
+    el.addEventListener('click', () => {
+        ul.querySelector('.active').classList.remove('active');
+
+        el.classList.add('active');
+    })
+})
+
+$(document).ready(function() {
+
+    $('.navbar .menu li a').click(function() {
+        $('html').css("scrollBehavior", "smooth");
+    });
+
+    $('.menu-btn').click(function() {
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+});
