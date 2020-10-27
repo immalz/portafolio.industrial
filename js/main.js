@@ -21,9 +21,9 @@ let li = document.querySelectorAll('li a');
 
 li.forEach(el => {
     el.addEventListener('click', () => {
-        ul.querySelector('.active').classList.remove('active');
+        ul.querySelector('.activado').classList.remove('activado');
 
-        el.classList.add('active');
+        el.classList.add('activado');
     })
 })
 
