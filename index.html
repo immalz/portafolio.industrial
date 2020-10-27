@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAFOLIO | NOMBRE</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
 </head>
@@ -18,9 +19,8 @@
         <ul class="menu">
             <li class="activado"><a href="#" class="menu-btn">Inicio</a></li>
             <li><a href="#sobre-mi" class="menu-btn">Sobre mi</a></li>
-            <li><a href="#experiencia" class="menu-btn">Experiencia</a></li>
             <li><a href="#educacion" class="menu-btn">Educacion</a></li>
-            <li><a href="#proyectos" class="menu-btn">Proyectos</a></li>
+            <li><a href="#experiencia" class="menu-btn">Experiencia</a></li>
             <li><a href="#contacto" class="menu-btn">Contacto</a></li>
         </ul>
         <div class="menu-btn">
@@ -64,13 +64,17 @@
             </div>
         </section>
 
-        <!-- <div class="experiencia" id="experiencia">
+        <!-- <section class="experiencia" id="experiencia">
             <div class="espacio"></div>
-            <h1>Experiencia</h1>
-        </div> -->
-
-
-        <div class="container-fluid educacion" id="educacion">
+            <div class="col-md-12 example-title">
+                <h2 class="title" data-aos="fade-down" data-aos-duration="1000">PROYECTOS PROFESIONALES</h2>
+            </div>
+            <div class="experiencia__contenido">
+                <div class="textos"></div>
+                <div class="imagen"></div>
+            </div>
+        </section> -->
+        <section class="container-fluid educacion" id="educacion">
             <div class="espacio"></div>
             <div class="row example-centered">
                 <div class="col-md-12 example-title">
@@ -137,11 +141,57 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <!--
-        <div class="snap-section habilidades" id="proyectos">
-            <h1>habilidades</h1>
-        </div> -->
+        </section>
+
+        <section class="snap-section proyectos" id="experiencia">
+            <div class="espacio"></div>
+            <div class="col-md-12 example-title">
+                <h2 class="title" data-aos="fade-down" data-aos-duration="1000">EXPERIENCIA PROFESIONAL</h2>
+            </div>
+            <div class="swiper-container-wrapper">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper bg">
+                        <div class="swiper-slide">
+                            <div class="title">LAC SECURITY</div>
+                            <div class="description">Prevencionista de Riesgos, del 17 de Agosto Del 2019 a la actualidad.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">Cardozo SAC</div>
+                            <div class="description">Supervisor de seguridad Industrial de Abril del 2018 a Agosto del 2019. Remodelaciones en tiendas Ripley en diferentes locaciones.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">EXPAND BUSINESS</div>
+                            <div class="description">Prevencionista SMA en Cementos Pacasmayo. Del 06 de marzo del 2017 al 20 de Junio del 2017.
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">IP GRUPO CONSTRUCTOR SAC</div>
+                            <div class="description">Gerente de Seguridad, Salud Ocupacional y Medio Ambiente. Del 24 de Octubre del 2016 a Febrero del 2017.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">SERVICIOS GENERALES VIVIANA E.I.R.L</div>
+                            <div class="description">Jefe de Abastecimiento del 17 de agosto del 2015 al 03 de Noviembre del 2015.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">ABRAXAS PERÚ S.A.C.</div>
+                            <div class="description">Supervisor De Seguridad En Servicio De Reemplazo E Instalación De Líneas De Udv, Urg Y Fcc Durante La Parada De La XII Inspección General Del CCC De Refinería Talara Del 01 De Octubre Del 2013 Al 31 De Octubre Del 2013.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mini">LAC SECURITY</div>
+                        <div class="swiper-slide mini">Cardozo SAC</div>
+                        <div class="swiper-slide mini">EXPAND BUSINESS</div>
+                        <div class="swiper-slide mini">IP GRUPO CONSTRUCTOR SAC</div>
+                        <div class="swiper-slide mini">SERVICIOS GENERALES VIVIANA E.I.R.L</div>
+                        <div class="swiper-slide mini">ABRAXAS PERÚ S.A.C.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="contact" id="contacto">
             <div class="espacio"></div>
             <div class="col-md-12 example-title">
@@ -221,7 +271,8 @@
         </footer>
 
         <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();

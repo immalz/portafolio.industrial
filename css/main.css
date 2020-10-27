@@ -280,6 +280,24 @@ html {
 }
 
 
+/*----------EXPERIENCIA PROFESIONAL---------*/
+
+.experiencia {
+    width: 80%;
+    margin: auto;
+}
+
+.experiencia__contenido {
+    min-height: 600px;
+    background: black;
+}
+
+.experiencia__contenido .imagen {
+    width: 60%;
+    background: url('../images/imagen1.jfif');
+}
+
+
 /*----------EDUCACION---------*/
 
 .educacion {
@@ -434,16 +452,178 @@ html {
 }
 
 
+/*----------GALERIA DE PROYECTOS---------*/
+
+.proyectos {
+    width: 80%;
+    height: 700px;
+    margin: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-wrapper .swiper-slide {
+    position: relative;
+}
+
+.swiper-wrapper .swiper-slide::before {
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(1) {
+    background: url('../images/galeria6.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(2) {
+    background: url('../images/galeria1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(3) {
+    background: url('../images/galeria2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(4) {
+    background: url('../images/galeria3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(5) {
+    background: url('../images/galeria4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(6) {
+    background: url('../images/galeria5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-container-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--blanco);
+}
+
+.swiper-slide-duplicate,
+.swiper-slide {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide-duplicate .description,
+.swiper-slide-duplicate .title,
+.swiper-slide .description,
+.swiper-slide .title {
+    display: block;
+    opacity: 0;
+    transition: 0.5s ease 0.5s;
+}
+
+.swiper-slide-duplicate-active .description,
+.swiper-slide-duplicate-active .title,
+.swiper-slide-active .description,
+.swiper-slide-active .title {
+    opacity: 1;
+}
+
+.swiper-slide-duplicate-active .title,
+.swiper-slide-active .title {
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: var(--subtitulo);
+    color: var(--blanco);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.swiper-slide-duplicate-active .description,
+.swiper-slide-active .description {
+    padding: 0 10px;
+    font-size: var(--texto);
+    color: var(--blanco);
+    position: relative;
+    transition: opacity 0.5s ease 0.75s;
+}
+
+.gallery-top {
+    width: 100%;
+    height: 75vh;
+}
+
+.gallery-thumbs .swiper-wrapper {
+    flex-direction: row;
+}
+
+.gallery-thumbs {
+    width: 100%;
+    height: 25vh;
+    padding-top: 10px;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    flex-flow: row nowrap;
+    height: 100%;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.mini {
+    color: var(--blanco);
+    position: relative;
+}
+
+
 /*----------CONTACTO---------*/
 
 .contact {
     width: 80%;
-    min-height: 600px;
+    min-height: 700px;
     margin: auto;
-    margin-bottom: 80px;
+    margin: 80px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .title {
@@ -605,6 +785,13 @@ html {
 }
 
 @media(max-width: 750px) {
+    .swiper-slide-duplicate-active .title,
+    .swiper-slide-active .title {
+        font-size: 2rem;
+    }
+    .contact {
+        margin-top: 150px;
+    }
     html {
         font-size: 12px;
     }
@@ -654,6 +841,9 @@ html {
     .contact .right form .fields {
         flex-direction: column;
     }
+    .proyectos {
+        width: 95%;
+    }
 }
 
 @media(max-width: 400px) {
@@ -681,6 +871,47 @@ html {
     }
     .historia__texto p {
         text-align: start;
+    }
+}
+
+@media (min-width: 480px) {
+    .gallery-top {
+        width: 80%;
+        height: 100%;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 480px) {
+    .gallery-thumbs {
+        width: 20%;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 480px) {
+    .swiper-container-wrapper {
+        flex-flow: row nowrap;
+    }
+}
+
+@media (min-width: 480px) {
+    .gallery-thumbs .swiper-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 480px) {
+    .gallery-thumbs .swiper-slide {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .swiper-container {
+        min-height: 320px;
     }
 }
 
