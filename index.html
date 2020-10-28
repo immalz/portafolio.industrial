@@ -29,15 +29,15 @@
     </nav>
 
     <main class=" main">
-        <div class="inicio" id="inicio">
+        <section class="inicio" id="inicio">
             <div class="inicio__texto">
                 <h1>ROBERTO<span> FLORES</span></h1>
                 <p>Licenciado en Ingenieria Industrial</p>
-                <a href="./static/CV__Roberto Flores.pdf" download="CV__Roberto Flores" class="cv">Descargar CV</a>
+                <a href="./assets/CV__Roberto Flores.pdf" download="CV__Roberto Flores" class="cv">Descargar CV</a>
                 <span class="fecha" id="fecha"></span>
             </div>
             <a href="#sobre-mi"><i class="fas fa-chevron-down"></i></a>
-        </div>
+        </section>
 
         <section class="historia" id="sobre-mi">
             <div class="espacio"></div>
@@ -59,7 +59,7 @@
                         Manejo de indicadores y Control de Producción.</p>
 
                     <p> Conocimiento y aplicaciones de indicadores como productividad, disponibilidad, ocupabilidad eficiencia y eficacia. Manejos de Microsoft office a nivel intermedio.</p>
-                    <a class="curriculum" href="./static/CV__Roberto Flores.pdf" download="CV__Roberto Flores"><button>Descargar CV</button></a>
+                    <a class="curriculum" href="./assets/CV__Roberto Flores.pdf" download="CV__Roberto Flores"><button>Descargar CV</button></a>
                 </div>
             </div>
         </section>
@@ -244,18 +244,18 @@
                 <div class="column right" data-aos="fade-left" data-aos-duration="1000">
                     <div class="text">
                         Enviame un mensaje</div>
-                    <form action="#">
+                    <form action="./assets/php/mail.php">
                         <div class="field name">
-                            <input type="text" placeholder="Nombre" required>
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Correo electronico" required>
+                            <input type="email" id="email" name="email" placeholder="Correo electronico" required>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Asunto" required>
+                            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Escribe tu mensaje aqui..." required></textarea>
+                            <textarea cols="30" id="message" name="message" rows="10" placeholder="Escribe tu mensaje aqui..." required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar</button>
