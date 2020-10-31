@@ -255,11 +255,13 @@ html {
     text-align: justify;
 }
 
-.historia__contenido .texto .curriculum {
+.historia__contenido .texto .curriculum,
+.eventos__contenido a {
     width: 150px;
 }
 
-.historia__contenido .texto .curriculum button {
+.historia__contenido .texto .curriculum button,
+.eventos__contenido a button {
     margin: 10px 0;
     width: 150px;
     padding: 10px 15px;
@@ -274,34 +276,48 @@ html {
     transition: all .4s ease;
 }
 
-.historia__contenido .texto .curriculum:hover button {
+.historia__contenido .texto .curriculum:hover button,
+.eventos__contenido a:hover button {
     transform: scale(1.1);
     color: var(--color-principal);
     background: none;
 }
 
 
-/*----------EXPERIENCIA PROFESIONAL---------*/
+/*----------EVENTOS---------*/
 
-.experiencia {
-    width: 80%;
-    margin: auto;
+.eventos {
+    position: relative;
 }
 
-.experiencia__contenido {
-    min-height: 600px;
-    background: black;
+.eventos__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.experiencia__contenido .imagen {
-    width: 60%;
-    background: url('../images/imagen1.jfif');
+.eventos__contenido .izquierda {
+    width: 100%;
+}
+
+.eventos__contenido .izquierda {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.eventos__contenido .izquierda .video iframe {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 20px;
 }
 
 
 /*----------EDUCACION---------*/
 
-.educacion {
+.educacion,
+.eventos {
     width: 80%;
     margin: auto;
 }
