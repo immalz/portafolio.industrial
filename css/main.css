@@ -305,6 +305,7 @@ html {
     display: flex;
     padding: 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .eventos__contenido .izquierda .video iframe {
@@ -1015,9 +1016,17 @@ html {
     .proyectos {
         width: 95%;
     }
+    .eventos__contenido .izquierda .video iframe {
+        width: 380px;
+        height: 230px;
+    }
 }
 
 @media(max-width: 400px) {
+    .eventos__contenido .izquierda .video iframe {
+        width: 330px;
+        height: 180px;
+    }
     html {
         font-size: 11px;
     }
